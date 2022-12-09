@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">EV</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">HAQQINDA</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENYU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">HARADA</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Səhər 6-dan axşam 5-ə qədər açıqdır</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Kafe<br>WikMaga edition</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">KAFE HAQQINDA</span></h5>
+    <p>The Cafe blabla ildə təsis edilib. Minimum hesab edirəm ki, heç bir nəticə əldə edə bilməyəcəksiniz.</p>
+    <p>Tam espresso və dəmləmə bar menyumuza əlavə olaraq, biz sifarişlə təzə hazırlanmış səhər yeməyi və nahar sendviçlərini, eləcə də müxtəlif yan və salatlar və digər yaxşı yeməkləri təqdim edirik.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Təbiətdən gələn məhsullardan lazımınca istifadə edin - amma heç vaxt tez və ya gec deyil." Təzə yeni şirniyyatdır.</i></p>
+      <p>Şef, Qəhvəçi və Qurucu: Mehemmed</p>
+    </div>
+    <img src="coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Açılış saatları:</strong> hər gün səhər 6-dan axşam 5-ə qədər.</p>
+    <p><strong>Adres:</strong> 15 Adr street, 5015, NY</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MENYU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Yemək</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">İçki</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Çörək Səbəti</h5>
+      <p class="w3-text-grey">Təzə bişmiş meyvə çörəkləri və muffinlərin çeşidi 5.50 azn</p><br>
+    
+      <h5>Meyvə ilə Bal Badam Granola</h5>
+      <p class="w3-text-grey">Təbii dənli bal ilə qızardılmış yulaf, kişmiş, badam və xurma 7.00 azn</p><br>
+    
+      <h5>Belçika vaflisi</h5>
+      <p class="w3-text-grey">Səməni unlu vanil ətirli xəmir 7.50 azn</p><br>
+    
+      <h5>Qayğanaq</h5>
+      <p class="w3-text-grey">Çırpılmış yumurta, qovrulmuş qırmızı bibər və sarımsaq, yaşıl soğan ilə 7,50 azn</p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="w3-text-grey">Şərbət, yağ və çoxlu giləmeyvə ilə 8.50 azn</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Kofe</h5>
+      <p class="w3-text-grey">Adi qəhvə 2.50 azn</p><br>
+    
+      <h5>Şokolad</h5>
+      <p class="w3-text-grey">Südlü şokoladlı espresso 4.50 azn</p><br>
+    
+      <h5>Korretto</h5>
+      <p class="w3-text-grey">Viski və qəhvə 5.00 azn</p><br>
+    
+      <h5>Buzlu çay</h5>
+      <p class="w3-text-grey">İsti çay istisna olmaqla, isti 3.00 azn</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Kola, Sprite, Fanta və s. 2.50 azn</p>
+    </div>  
+    <img src="coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">BİZİ HARADA TAPACAĞIZ</span></h5>
+    <p>Bizi hansısa yerdə hansısa ünvanda tapın.</p>
+    <img src="map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span>Böyük və ya kiçik istənilən tədbir üçün tam xidmətli iaşə təklif edirik. Biz sizin ehtiyaclarınızı başa düşürük və yeməkləri həm görünüş, həm də dad kimi ən böyük meyarlara cavab verəcək şəkildə təmin edəcəyik.</p>
+    <p><strong>Ehtiyat</strong> bir masa, bugünkü xüsusi üçün soruşun və ya sadəcə bizə mesaj göndərin:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">MESAJ GÖNDERİN</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by WikMaga, Elmeddin Elizade</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
